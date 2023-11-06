@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kankulato'r</title>
+  <link rel="stylesheet" href="./main.css ">
+</head>
+<body>
+<div class="eng-katta">
+  <div class="big">
+<div class="input-none">
+  <input type="text" id="display" class="input-text" readonly>
+
+</div>
+    <div class="symbol">
+    <div class="one-1">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendToDisplay(1)">1</button>
+      <button class="btn" onclick="appendToDisplay(2)">2</button>
+      <button class="btn" onclick="appendToDisplay(3)">3</button>
+      <button class="btn" onclick="calculate()">±</button>
+    </div>
+      <div class="two-2">
+        <button class="btn" onclick="appendToDisplay(4)">4</button>
+      <button class="btn" onclick="appendToDisplay(5)">5</button>
+      <button class="btn" onclick="appendToDisplay(6)">6</button>
+      <button class="btn" onclick="appendToDisplay('*')">*</button>
+      <button class="btn" onclick="appendToDisplay('-')">-</button>
+      </div>
+   <div class="there-3">
+    <button class="btn" onclick="appendToDisplay(7)">7</button>
+    <button class="btn" onclick="appendToDisplay(8)">8</button>
+    <button class="btn"  onclick="appendToDisplay(9)">9</button>
+    <button class="btn" onclick="appendToDisplay('/')">/</button>
+    <button class="width" onclick="appendToDisplay('+')">+</button>
+   </div>
+   <div class="zero">
+    <button class="height" onclick="appendToDisplay(0)">0</button>
+          <button class="btn" onclick="appendToDisplay('`')">`</button>
+          <button class="btn" onclick="calculate()">=</button>
+   </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
